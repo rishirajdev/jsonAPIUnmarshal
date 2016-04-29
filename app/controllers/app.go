@@ -16,6 +16,7 @@ type App struct {
 }
 
 type Address struct{
+		Id 	int 	`jsonapi:"primary,address" `
 		Country string  `jsonapi:"attr,country" `
 		State   string  `jsonapi:"attr,state" `
 		City    string  `jsonapi:"attr,city" `
@@ -99,6 +100,7 @@ func testBlogForCreate(i int) *User{
 		YearsOfExp 	: "5",
 		Description 	: "hdgfsdfg",
 		Address		: []*Address{&Address{
+						Id	: i*2,
 						Country :"INDIA",
 						State	: "MH",
 						City	:  "PU",

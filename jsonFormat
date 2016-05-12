@@ -1,0 +1,83 @@
+{
+
+   "data": 
+
+      {
+
+         "type": "users",
+
+         "attributes": {
+
+            "company": "Torant",
+
+            "contact": "12345678",
+
+            "description": "hdgfsdfg",
+
+            "email": "abc@abc.com",
+
+            "first-name": "GHI",
+
+            "job-title": "xyz",
+
+            "last-name": "DEF",
+
+            "secContact": "434545665",
+
+            "username": "abc123",
+
+            "yearsOfExp": "5"
+
+         },
+
+         "relationships": {
+
+            "address": {
+
+               "data": [
+
+                  {
+
+                     "type": "address",
+
+                     "id": "abc01"
+
+                  }
+
+               ]
+
+            }
+
+         }
+
+      }
+
+   ,
+
+   "included": [
+
+      {
+
+         "type": "address",
+
+         "id": "abc01",
+
+         "attributes": {
+
+            "city": "pune",
+
+            "country": "INDIA",
+
+            "state": "MH",
+
+            "street": "ahbfshdf",
+
+            "zipcode": "12345"
+
+         }
+
+      }
+
+   ]
+
+}
